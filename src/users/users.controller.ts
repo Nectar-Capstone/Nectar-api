@@ -7,11 +7,6 @@ import { JwtAuthGuard } from 'src/auth/guard/jwt-auth.guard';
 export class UsersController {
   constructor(private userService: UsersService) {}
 
-  @Get('')
-  getUsers() {
-    return this.userService.findMany();
-  }
-
   @UseGuards(JwtAuthGuard)
   @Get('/patient')
   getPatient(): Promise<Patient[]> {

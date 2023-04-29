@@ -90,7 +90,6 @@ model Patient {
   gender               String?      @db.VarChar(10)
   telecom              String?      @db.VarChar(255)
   contact_name         String       @db.VarChar(255)
-  contact_uid          String?      @db.VarChar(64)
   contact_relationship String       @db.VarChar(255)
   contact_gender       String?      @db.VarChar(10)
   contact_telecom      String       @db.VarChar(255)

@@ -84,7 +84,6 @@ CREATE TABLE `Patient` (
     `gender` VARCHAR(10) NULL,
     `telecom` VARCHAR(255) NULL,
     `contact_name` VARCHAR(255) NOT NULL,
-    `contact_uid` VARCHAR(64) NULL,
     `contact_relationship` VARCHAR(255) NOT NULL,
     `contact_gender` VARCHAR(10) NULL,
     `contact_telecom` VARCHAR(255) NOT NULL,
